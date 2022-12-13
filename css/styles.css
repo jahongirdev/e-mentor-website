@@ -437,6 +437,52 @@ a {
   opacity: 0.8;
 }
 
+.site__joinnow {
+  background-image: url("../img/photo-joinnow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+.joinnow {
+  padding: 120px 0px;
+  width: 508px;
+  float: right;
+}
+.joinnow-heading {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 70px;
+  color: #353a5a;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.joinnow-text {
+  font-weight: 400;
+  font-size: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  line-height: 24px;
+  color: #353a5a;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.joinnow-btn {
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fa9f42;
+  color: #fdfdfd;
+  padding: 20px 56px;
+  border-radius: 0px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.joinnow-btn:hover {
+  opacity: 0.9;
+}
+.joinnow-btn:active {
+  opacity: 0.8;
+}
+
 /* ARROWDOWN ICON ANIMATION */
 @keyframes arrowdown {
   0% {
@@ -489,6 +535,18 @@ a {
   .getstart-content {
     margin-top: 30px;
     margin-left: 0;
+  }
+  .site__joinnow {
+    background: none;
+  }
+  .joinnow {
+    width: auto;
+    text-align: center;
+    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -557,6 +615,9 @@ a {
   }
   .courses-heading {
     font-size: 40px;
+  }
+  .joinnow-heading {
+    font-size: 48px;
   }
 }
 @media only screen and (max-width: 400px) {
