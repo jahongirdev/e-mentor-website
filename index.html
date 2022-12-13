@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -31,7 +34,7 @@
     <!-- SITE HEADER -->
     <header class="site__header">
       <div class="container">
-        <nav class="sitenav">
+        <nav class="sitenav" data-aos="fade-down">
           <ul class="sitemenu">
             <li class="sitemenu-item">
               <a href="#" class="sitemenu-link">О нас</a>
@@ -62,7 +65,7 @@
     <section class="site__hero">
       <div class="container">
         <div class="site__hero-hero">
-          <div class="site__hero-hero__left">
+          <div class="site__hero-hero__left" data-aos="fade-left">
             <div class="left-social-icons">
               <a class="social-icon-link" href="#">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +96,7 @@
                 srcset="img/left-side-img.png 1x, img/left-side-img@2x.png 2x">
             </div>
           </div>
-          <div class="site__hero-hero__center">
+          <div class="site__hero-hero__center" data-aos="fade-up">
             <div class="center-logo">
               <img src="img/logo.svg" alt="Center Side Logo" width="170" height="22">
             </div>
@@ -102,7 +105,7 @@
               направлениям</p>
             <a class="center-btn" href="#">Все направления</a>
           </div>
-          <div class="site__hero-hero__right">
+          <div class="site__hero-hero__right" data-aos="fade-right">
             <div class="right-image">
               <img class="right-image__img" src="img/right-side-img.png" alt="Right Side Image"
                 srcset="img/right-side-img.png 1x, img/right-side-img@2x.png 2x">
@@ -123,7 +126,7 @@
   <!-- SITE NUMSTATS -->
   <section class="site__numstats">
     <div class="container">
-      <div class="numstats">
+      <div class="numstats" data-aos="fade-down">
         <div class="stat">
           <h3 class="stat-heading">100+</h3>
           <p class="stat-text">теоретических и практических курсов для разного уровня</p>
@@ -146,7 +149,7 @@
   <!-- SITE ABOUT -->
   <section class="site__about">
     <div class="container">
-      <div class="about">
+      <div class="about" data-aos="fade-up">
         <div class="about-content">
           <h2 class="about-content__heading">Учитесь у лучших</h2>
           <div class="about-content__text">
@@ -200,7 +203,7 @@
   <!-- SITE GETSTART -->
   <section class="site__getstart">
     <div class="container">
-      <div class="getstart">
+      <div class="getstart" data-aos="fade-down">
         <div class="getstart-image">
           <img src="img/photo.jpg" alt="Image" srcset="img/photo.jpg 1x, img/photo@2x.jpg 2x" width="470" height="332">
         </div>
@@ -217,7 +220,7 @@
   <!-- SITE COURSES -->
   <section class="site__courses">
     <div class="container">
-      <div class="courses">
+      <div class="courses" data-aos="fade-down">
         <h2 class="courses-heading">Популярные курсы</h2>
         <div class="course-box">
           <a href="#">
@@ -258,7 +261,7 @@
   <!-- SITE JOIN -->
   <section class="site__joinnow">
     <div class="container">
-      <div class="joinnow">
+      <div class="joinnow" data-aos="zoom-out-down">
         <h2 class="joinnow-heading">Присоединяйтесь к E-Mentor сейчас</h2>
         <p class="joinnow-text">Выберите подходящий тариф и формат обучения, пройдите 2 урока и мы подарим вам
           дополнительные лекции по любому направлению бесплатно!</p>
@@ -269,7 +272,7 @@
   <!-- SITE FOOTER -->
   <footer class="site__footer">
     <div class="container">
-      <div class="footer">
+      <div class="footer" data-aos="fade-up">
         <div class="footer-top">
           <ul class="top-child">
             <li class="top-child-item">
@@ -369,6 +372,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/main.js"></script>
 </body>
 
